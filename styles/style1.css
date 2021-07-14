@@ -34,7 +34,7 @@ header{
 .button-style{
     width: 168px;
     height: 44px;
-    background: #E02C6D;
+    background: #be4e4e;
     padding: 10px 24px;
     color: white;
     border: 0;
@@ -132,42 +132,7 @@ article{
     transition: transform .7s ease-in-out; 
  }
 
- /*------------- 
- Quote Area 
- --------------*/
-.quote-area{
-    background-color: rgba(255, 167, 94, 0.116);
-    padding: 200px;
-}
- .quote-title h1{
-     font-size: 30px;
-     justify-content: center;
-     display: flex;
-     margin-bottom: 50px;
-     color: tomato;
- }
- .quote-area{
-     margin: 120px auto;
- }
- .quote{
-     display: flex;
-     justify-content: center;
-     align-items: center;
- }
- .quote-image img{
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
- }
- .quote-info{
-     width: 400px;
-     padding-left: 20px;
- }
- .quote-person{
-     margin-left: 65%;
-     color: rgb(206, 127, 38);
- }
-
+ 
  /*--------------
   Footer Area
  --------------- */
@@ -194,7 +159,7 @@ footer{
      font-size: 22px;
  }
  .footer-icon a{
-    color: #969BAB;
+    color: #242c46;
  }
  .copyright{
      display: flex;
@@ -231,28 +196,8 @@ footer{
      .article-information{
          text-align: justify;
     }
-     .article-logos{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-    }
-    .quote{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .quote-image img{
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-    }
-    .quote-area{
-         padding-left: 174px;
-    }
-    .quote-info{
-         width: 200px;
-    }
     
+    }
     .players-info{
          width: 100%;
     }
@@ -260,4 +205,4 @@ footer{
         width: 275px;
         height: 63px; 
     }
- }
+ 
