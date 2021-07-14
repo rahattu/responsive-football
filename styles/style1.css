@@ -5,9 +5,7 @@ body{
     font-family: 'Noto Sans TC', sans-serif;
     margin: 0;
 }
-*{
-    margin: 0;
-}
+
 /*------------- 
  Header Area
 -------------- */
@@ -34,9 +32,9 @@ header{
 .button-style{
     width: 168px;
     height: 44px;
-    background: #be4e4e;
+    background: #1090b8;
     padding: 10px 24px;
-    color: white;
+    color: rgb(231, 211, 211);
     border: 0;
     margin-top: 30px;
     border-radius: 5px;
@@ -45,7 +43,7 @@ header{
 .button-style:hover{
     font-size:20px;
     width: 220px;
-    background-image: linear-gradient(rgb(235, 171, 54),rgb(241, 57, 24));
+    background-image: linear-gradient(rgb(54, 235, 69),rgb(6, 45, 63));
     transition: 0.7s ease-in-out;
 }
 .header-image img{
@@ -78,11 +76,14 @@ Main Area
     justify-content: center;
     align-items: center;
     padding: 15px 15px 40px 15px;
-    border-radius: 10px;
+    border-radius: 15px;
+    margin-left: 30px;
+    margin-right: 20px;
 }
 .player-info img{
     width: 300px;
     height: 256px;
+    margin-left: 30px;
 }
 .player-title{
     width: 300px;
