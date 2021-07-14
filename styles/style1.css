@@ -1,0 +1,263 @@
+/*-------------
+ Common Section
+------------- */
+body{
+    font-family: 'Noto Sans TC', sans-serif;
+    margin: 0;
+}
+*{
+    margin: 0;
+}
+/*------------- 
+ Header Area
+-------------- */
+header{
+    background-color: #79104d;
+    margin-bottom: 130px;
+}
+.header-area{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 200px;
+}
+.header-title{
+    font-size: 64px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+.header-title h1{
+    margin-top: 0;
+}
+.button-style{
+    width: 168px;
+    height: 44px;
+    background: #E02C6D;
+    padding: 10px 24px;
+    color: white;
+    border: 0;
+    margin-top: 30px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.button-style:hover{
+    font-size:20px;
+    width: 220px;
+    background-image: linear-gradient(rgb(235, 171, 54),rgb(241, 57, 24));
+    transition: 0.7s ease-in-out;
+}
+.header-image img{
+    width: 556px;
+    height: 438px;
+}
+
+.header-image:hover img{
+    transform: rotate(15deg);
+    transition:transform 3s ease-in;
+}
+
+/*---------- 
+Main Area
+----------- */
+
+.players-info{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 27px;
+    width: 1050px;
+    margin: auto;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+.player-info{
+    text-align: justify;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    justify-content: center;
+    align-items: center;
+    padding: 15px 15px 40px 15px;
+    border-radius: 10px;
+}
+.player-info img{
+    width: 300px;
+    height: 256px;
+}
+.player-title{
+    width: 300px;
+    height: 154px;
+}
+.player-title h3{
+    font-size: 28px;
+    font-weight: 700;
+    margin-top: 16px;
+    margin-bottom: 10px;
+}
+.player-title>p{
+   color: #6C6C6C;
+    font-size: 16px;
+}
+
+/*-------------- 
+Article area
+--------------- */
+article{
+    margin-top: 100px;
+    background-color: #F2F2F2;
+    padding: 5%;
+}
+.article-information h1{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.extra-article{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 500px;
+}
+.article-logos{
+    display: flex;
+    text-align: justify;
+}
+.article-logo img{
+    width: 100px;
+    margin-right: 40px;
+    margin-top: 50px;
+}
+.article-logo>img:hover{
+    transform: scale(1.2);
+    transition: transform .7s ease-in-out; 
+ }
+
+ /*------------- 
+ Quote Area 
+ --------------*/
+.quote-area{
+    background-color: rgba(255, 167, 94, 0.116);
+    padding: 200px;
+}
+ .quote-title h1{
+     font-size: 30px;
+     justify-content: center;
+     display: flex;
+     margin-bottom: 50px;
+     color: tomato;
+ }
+ .quote-area{
+     margin: 120px auto;
+ }
+ .quote{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ .quote-image img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+ }
+ .quote-info{
+     width: 400px;
+     padding-left: 20px;
+ }
+ .quote-person{
+     margin-left: 65%;
+     color: rgb(206, 127, 38);
+ }
+
+ /*--------------
+  Footer Area
+ --------------- */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+    /* margin-top: 200px; */
+ }
+ .footer-logo img{
+    width: 484px;
+    height: 110px;
+ }
+ .footer-icons{
+     display: flex;
+     justify-content: center;
+     text-align: center;
+ }
+ .footer-icon{
+     margin: 15px;
+     font-size: 22px;
+ }
+ .footer-icon a{
+    color: #969BAB;
+ }
+ .copyright{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 18px;
+ }
+
+ /* -------------------------------------
+ Responsive design for mobile devices
+ ---------------------------------------- */
+
+ @media only screen and (max-width:688px){
+     
+     .header-area ,.players-info{
+        display: flex;
+        padding-top: 100px;
+        padding-bottom: 200px;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+     .header-title h1{
+         font-size: 36px;
+    }
+     .header-image img{
+        margin-top: 55px;
+        max-width: 330px;
+        max-height: 260px;
+    }
+     .extra-article{
+         width: 100%;
+    }
+     .article-information{
+         text-align: justify;
+    }
+     .article-logos{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .quote{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .quote-image img{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+    .quote-area{
+         padding-left: 174px;
+    }
+    .quote-info{
+         width: 200px;
+    }
+    
+    .players-info{
+         width: 100%;
+    }
+    .footer-logo img{
+        width: 275px;
+        height: 63px; 
+    }
+ }
